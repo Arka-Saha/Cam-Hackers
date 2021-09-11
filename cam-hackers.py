@@ -77,6 +77,7 @@ try:
         find_ip = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
         for ip in find_ip:
             print("\033[1;31m", ip)
+            #use file, open and read functions to store the IPs in a file...
 except:
     pass
 finally:
